@@ -5,10 +5,31 @@
     font-family: Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+.section {
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+    /* text-align: left; */
+    max-width: 1000px;
+    margin: auto;
+    padding-top:60px;
+    margin-bottom: 25px;
+}
+
+
 /* header */
 .header {
     background-color: #333;
     padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .navbar {
@@ -20,7 +41,7 @@
 .nav-list {
     list-style: none;
     display: flex; 
-    gap: 50px; /* Spacing between links */
+    gap: 100px;
 }
 
 .nav-list li {
@@ -40,23 +61,55 @@
     border-radius: 5px;
 }
 
-/* about section */
-#about {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left; 
-    max-width: 1000px; 
-    margin: 50px auto; 
-    padding: 20px;
+/* home page section */
+
+.home_container {
+    margin-top: 50px;
+    margin-inline: auto;
+    padding-inline: auto;
+    text-align: center;
 }
 
+.home_title {
+    font-size: 45px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    max-width: 500px;
+}
+
+
+
+
+/* about me section */
+
+.about_container {
+    margin-top: 500px;
+    margin-inline: auto;
+    padding-inline: auto;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    padding-top:100px;
+    margin-bottom: 25px;
+}
+
+.about_title {
+    font-size: 45px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    max-width: 500px;
+}
+
+#about {
+    padding-top: 50px;
+}
 
 #about h1 {
     font-size: 28px;
     margin-bottom: 10px;
     padding-left: 15px;
+    margin-top: 0;
+    text-align: left;
 }
 
 
@@ -64,30 +117,20 @@
     font-size: 18px;
     line-height: 1.6;
     padding-left: 15px;
+    text-align: left;
 }
 
 /* projects section */
+
 #projects {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left; 
-    max-width: 1000px; 
-    margin: 50px auto; 
-    padding: 20px;
+    padding-top: 50px;
 }
 
 #projects h1 {
     font-size: 28px;
     margin-bottom: 10px;
     padding-left: 15px;
-}
-
-#projects h2 {
-    font-size: 20px;
-    line-height: 1.6;
-    padding-left: 15px;
+    margin-top: 0;
 }
 
 #projects h2 {
@@ -101,6 +144,9 @@
     line-height: 1.6;
     padding-left: 15px;
 }
+
+
+/* hobbies section */
 
 
 
