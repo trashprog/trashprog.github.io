@@ -14,7 +14,6 @@ html {
     flex-direction: column;
     max-width: 1000px;
     margin: auto;
-    padding-top:50px;
     color:white;
 }
 
@@ -81,9 +80,9 @@ html {
 /* about me section */
 
 .about_container projects_container  experiences_container drawings_container contact_container{
-    max-width: 1000px;
-    padding:20px;
-    margin: auto;
+    /* max-width: 1000px; */
+    /* padding:10000px; */
+    /* margin: 50%; */
 }
 
 .about_title {
