@@ -27,6 +27,7 @@ html {
     height: 7;
     position: fixed;
     top: 0;
+    z-index: 1000;
     /* z-index: 1000; */
 }
 
@@ -108,8 +109,8 @@ html {
 
 .project_cards{
     display: flex;
-    flex-wrap: wrap-reverse;
     flex-flow: row wrap;
+    overflow: hidden;
 }
 
 .visual_card {
@@ -129,14 +130,20 @@ html {
 .link_card{
     text-decoration: none;
     color : white;
+    margin: 30px;
+    transition: 0.5s;
     
 }
 
-.text_card{
-    font-size: 15px;
-    text-align: center;
+.link_card:hover {
+    transform: scale(1.1);
+    color: rgb(0, 217, 255);
 }
 
+.text_card{
+    font-size: 18px;
+    text-align: center;
+}
 
 
 
