@@ -1,23 +1,22 @@
-* {
-    /* margin: 0; */
-    font-family: Arial, sans-serif;
-    background-color: #000;
-}
+* {font-family: Arial, sans-serif;}
 
-html {
-    scroll-behavior: smooth;
-}
+img{width:70%;height:auto;}
 
+html {scroll-behavior: smooth;}
 
+body{background-color: #000;}
+
+h2{font-weight: bold; font-size: 30px;}
 .section {
-    display: flex;
-    flex-direction: column;
+    display: block;
     justify-content: center;
     align-items: center;
     color:white;
-    margin:50px;
+    margin:2em auto;
+    width:70%
 }
 
+a {color: white;}
 
 /* header */
 .header {
@@ -28,13 +27,13 @@ html {
     position: fixed;
     top: 0;
     z-index: 1000;
-    /* z-index: 1000; */
 }
 
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .nav-list {
@@ -62,55 +61,38 @@ html {
 
 /* home page section */
 
-.home_container {
-    margin-top: 50px;
-    margin-inline: auto;
-    padding-inline: auto;
-    text-align: center;
+#home .container{
+    margin:auto;
+    margin-top: 100px;
+    display:block;text-align:center;
 }
+#home .hero-img{width:40%;height:auto;margin:0 auto 1em auto;border-radius:5em;}
 
 .home_title {
     font-size: 45px;
-    margin-bottom: 0px;
-    padding-bottom: 50px;
-    max-width: 500px;
 }
 
 
 /* about me section */
 
-.about_container {
+/* shared styles */
+#about .container #projects #experiences{
+    width:80%;
     text-align: left;
+    margin:auto;
 }
 
 #about p {
     font-size: 20px;
-    max-width: 1000px;
 }
-
-/* common section formats */
-/* #about h2, #projects h2, #experiences h2, #contact h2 {
-    font-size: 25px;
-    text-align: left;
-} */
-
-/* #projects p, #experiences p #contact p {
-    font-size: 15px;
-    line-height: 1.6;
-    padding-left: 15px;
-} */
 
 /* projects section */
-
-.project_title {
-    text-align: left;
-    width: 71%;
-}
 
 .project_cards{
     display: flex;
     flex-flow: row wrap;
     overflow: hidden;
+    justify-content: center;
 }
 
 .visual_card {
@@ -119,6 +101,7 @@ html {
     align-items: center;  /* Center vertically */
     height: 300px;
     border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
 }
 
 .visual_card img, .visual_card video {
@@ -136,38 +119,78 @@ html {
 }
 
 .link_card:hover {
+    color:#fff; 
+    text-decoration:none;
     transform: scale(1.1);
-    color: rgb(0, 217, 255);
+    
 }
 
 .text_card{
     font-size: 18px;
-    text-align: center;
+}
+
+.text_card span{
+    font-size: 15px;
+    
 }
 
 
 
 /* experiences section */
-.experience_title{
-    text-align: left;
-    width: 71%;
-}
 
-experience_container{
-    text-align: left;
+.experience_container{
+    margin: 1em auto;
 
 }
 
+.experience_visual{
+    padding: 1em;
+    display: flex;
+}
 
+.experience_visual img{
+    transition: 0.5s;
+}
 
-
-/* drawings section */
-
-
-
+.experience_visual img:hover {
+    transform: scale(1.1);
+}
 
 
 /* contact section */
+
+.contact_container {
+    text-align: left;
+}
+
+.resume{
+    border: 1px solid white;
+    display: inline-block;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+.resume a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.resume:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.resume a:hover{
+    color: black;
+}
+
+/* footer */
+.footer{
+    margin-top: 2em;
+    padding: 1em;
+    color: rgb(166, 166, 166);
+    text-align: center;
+}
 
 
 
