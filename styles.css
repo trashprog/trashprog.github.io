@@ -12,9 +12,10 @@ html {
 .section {
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
     color:white;
+    margin:50px;
 }
 
 
@@ -26,7 +27,7 @@ html {
     height: 7;
     position: fixed;
     top: 0;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 
 .navbar {
@@ -75,71 +76,80 @@ html {
 }
 
 
-
-
 /* about me section */
 
-.about_container projects_container  experiences_container drawings_container contact_container{
-    /* max-width: 1000px; */
-    /* padding:10000px; */
-    /* margin: 50%; */
-}
-
-.about_title {
-    font-size: 45px;
-    margin-bottom: 0px;
-    padding-bottom: 50px;
-    max-width: 500px;
-}
-
-#about {
-    padding-top: 50px;
-}
-
-#about h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    padding-left: 15px;
-    margin-top: 0;
+.about_container {
     text-align: left;
 }
 
 #about p {
     font-size: 20px;
-    padding-left: 15px;
-    text-align: left;
+    max-width: 1000px;
 }
 
 /* common section formats */
+/* #about h2, #projects h2, #experiences h2, #contact h2 {
+    font-size: 25px;
+    text-align: left;
+} */
 
-#projects, #experiences, #drawings{
-    padding-top: 50px;
-}
-
-#projects h1, #experiences h1, #drawings h1{
-    font-size: 28px;
-    margin-bottom: 10px;
-    padding-left: 15px;
-    margin-top: 0;
-}
-
-#projects h2, #experiences h2, #drawings h2{
-    font-size: 20px;
-    line-height: 1.6;
-    padding-left: 15px;
-}
-
-#projects p, #experiences p, #drawings p{
+/* #projects p, #experiences p #contact p {
     font-size: 15px;
     line-height: 1.6;
     padding-left: 15px;
-}
+} */
 
 /* projects section */
+
+.project_title {
+    text-align: left;
+    width: 71%;
+}
+
+.project_cards{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-flow: row wrap;
+}
+
+.visual_card {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    height: 300px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.visual_card img, .visual_card video {
+    max-width:90%;
+    max-height: 90%;
+    object-fit: contain; 
+}
+
+.link_card{
+    text-decoration: none;
+    color : white;
+    
+}
+
+.text_card{
+    font-size: 15px;
+    text-align: center;
+}
+
 
 
 
 /* experiences section */
+.experience_title{
+    text-align: left;
+    width: 71%;
+}
+
+experience_container{
+    text-align: left;
+
+}
 
 
 
