@@ -1,30 +1,12 @@
 // code for html page
+// Add event listeners to all videos with the class 'preview-video'
+document.querySelectorAll('.preview-video').forEach(video => {
+    video.addEventListener('mouseover', () => {
+        video.play();
+    });
 
-// code for pomodoro video
-const pomodoro_video = document.getElementById('PomodoroVideo');
-
-pomodoro_video.addEventListener('mouseover', () => {
-    pomodoro_video.play();
+    video.addEventListener('mouseout', () => {
+        video.pause();
+        video.currentTime = 0;
+    });
 });
-
-pomodoro_video.addEventListener('mouseout', () => {
-    pomodoro_video.pause();
-    pomodoro_video.currentTime = 0;
-});
-
-// code for the space shooter game
-const space_video = document.getElementById('SpaceShooterVideo');
-
-space_video.addEventListener('mouseover', () => {
-    space_video.play();
-});
-
-space_video.addEventListener('mouseout', () => {
-    space_video.pause();
-    space_video.currentTime = 0;
-});
-
-
-
-
-

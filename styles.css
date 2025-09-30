@@ -113,8 +113,8 @@ a {color: white;}
 }
 
 .visual_card img, .visual_card video {
-    max-width:90%;
-    max-height: 90%;
+    max-width:95%;
+    max-height: 95%;
     object-fit: contain; 
 }
 
@@ -201,4 +201,15 @@ a {color: white;}
 }
 
 
+/* video container */
+.link_container {
+  display: flex;
+  gap: 20px; /* space between the two */
+  justify-content: center; /* center them horizontally */
+}
 
+.link_card {
+  flex: 1; /* make them share space */
+  max-width: 500px; /* optional: limit width */
+  text-decoration: none;
+}
